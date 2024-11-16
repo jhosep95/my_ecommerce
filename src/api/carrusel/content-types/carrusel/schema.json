@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "carrusels",
+  "info": {
+    "singularName": "carrusel",
+    "pluralName": "carrusels",
+    "displayName": "carrusel"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "c_vista": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "titulo": {
+      "type": "text"
+    }
+  }
+}
