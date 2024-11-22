@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cupons",
+  "info": {
+    "singularName": "cupon",
+    "pluralName": "cupons",
+    "displayName": "cupon",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "c_code": {
+      "type": "text"
+    },
+    "monto": {
+      "type": "decimal"
+    },
+    "f_expiracion": {
+      "type": "datetime"
+    },
+    "limite": {
+      "type": "integer"
+    },
+    "estado": {
+      "type": "boolean"
+    },
+    "categorias": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::categoria.categoria",
+      "mappedBy": "cupon"
+    },
+    "producto": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::producto.producto"
+    }
+  }
+}
